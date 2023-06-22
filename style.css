@@ -1,6 +1,6 @@
 body {
     margin-top: 2.5rem;
-    background-image: url("../weatherApp/images/weatherImage.webp");
+    background-image: url("./weatherImage.webp");
     background-repeat: no-repeat;
     color: white;
     background-size: 100%;
