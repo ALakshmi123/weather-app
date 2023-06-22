@@ -42,7 +42,6 @@ function getWeather() {
   })
   .then(data => {
     if(data.length!==0 && data.address.length === city.length) {
-      errorMessage.innerHTML = "";
       degress.innerHTML = data.days[0].temp+`<span class="id">&nbsp;&deg;</span><span>&nbsp;C</span>`;
       description.innerHTML = data.days[0].conditions;
       cloudIcons.innerHTML = getIcon(data.days[0].icon);
