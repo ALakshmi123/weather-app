@@ -1,13 +1,13 @@
 //Getting HTML elements through the predefined methods of document object
-const locationInput = document.getElementById("location-id");
-const locationName = document.getElementById("location-name");
-const description = document.getElementById("description");
-const degress = document.getElementById("temperature");
-const cloudIcons = document.getElementById("cloud-img");
-const cardContainer = document.getElementById("weather-cards");
+const locationInput = document.getElementsByClassName("location-id");
+const locationName = document.getElementsByClassName("location-name");
+const description = document.getElementsByClassName("description");
+const degress = document.getElementsByClassName("temperature");
+const cloudIcons = document.getElementsByClassName("cloud-img");
+const cardContainer = document.getElementsByClassName("weather-cards");
 const errorMessage = document.getElementById("error-text");
-const getWeatherButton = document.getElementById("get-weather");
-const modalPopUp = document.getElementById("my-modal");
+const getWeatherButton = document.getElementsByClassName("get-weather");
+const modalPopUp = document.getElementsByClassNam("my-modal");
 const closeIcon = document.getElementsByClassName("close")[0];
 
 const apiKey = "RGLWMCQF2M8HJUNW5BWFHTQF5";

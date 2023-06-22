@@ -13,7 +13,7 @@ input {
     height: 1.5rem;
     padding-left: .25rem;
 }
-#get-weather {
+.get-weather {
     height: 1.8rem;
     padding: 0 0.625rem;
     width: fit-content;
