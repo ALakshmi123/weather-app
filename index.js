@@ -7,7 +7,7 @@ const cloudIcons = document.getElementsByClassName("cloud-img");
 const cardContainer = document.getElementsByClassName("weather-cards");
 const errorMessage = document.getElementById("error-text");
 const getWeatherButton = document.getElementsByClassName("get-weather");
-const modalPopUp = document.getElementsByClassNam("my-modal");
+const modalPopUp = document.getElementsByClassName("my-modal");
 const closeIcon = document.getElementsByClassName("close")[0];
 
 const apiKey = "RGLWMCQF2M8HJUNW5BWFHTQF5";
