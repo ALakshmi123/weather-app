@@ -22,10 +22,10 @@ let imgSource;
 let day;
 let days;
 
-// Adding On Click Add Event Lister to Get Weather Button.
+// Adding OnClick Add Event Lister to Get Weather Button.
 getWeatherButton.addEventListener("click", handleGetWeatherData);
 
-//handleGetWeatherData(): this method is using for handling the error scenarios based the entering the value of city.
+//handleGetWeatherData(): this method used for handling the error scenarios based the entering the value of city.
 function handleGetWeatherData() {
     if(locationInputField.value === "") {
       modalPopUp.style.display = "block";
@@ -40,7 +40,7 @@ function handleGetWeatherData() {
     }
 }
 
-//getAPIURL(): this method is using for returning weather API URL.
+//getAPIURL(): this method used for returning weather API URL.
 function getAPIURL(cityName) {
   weatherAPIURL = `${apiLink}/${cityName}?unitGroup=metric&key=${apiKey}&contentType=json`;
   return weatherAPIURL;
@@ -88,27 +88,27 @@ function getWeatherData() {
 function getIcon(condition) {
   switch(condition){
     case 'partly-cloudy-day':
-    imgSource = 'https://i.ibb.co/PZQXH8V/27.png';
+    imgSource = './assets/images/cloudySunny.svg';
     break;
     case 'cloudy':
-    imgSource = 'https://i.ibb.co/Kzkk59k/15.png';
+    imgSource = './assets/images/cloudy.svg';
     break;
     case 'rain':
-    imgSource = 'https://i.ibb.co/kBd2NTS/39.png';
+    imgSource = './assets/images/rain.svg';
     break;
     case 'clear day':
-    imgSource = 'https://i.ibb.co/rb4rrJL/26.png';
+    imgSource = './assets/images/sunny.svg';
     break;
     case 'clear night':
-    imgSource = 'https://i.ibb.co/1nxNGHL/10.png';
+    imgSource = './assets/images/snow.svg';
     break;
     default:
-    imgSource = 'https://i.ibb.co/rb4rrJL/26.png';
+    imgSource = './assets/images/wind.svg';
   }
     return `<img src= ${imgSource} width="40px" height="40px" alt="weather icon"/>`;
 }
 
-//getDayName(): this method is using  for converting date to day format.
+//getDayName(): this method used for converting date to day format.
 function getDayName(date) {
     day = new Date(date);
     days = [
@@ -123,10 +123,10 @@ function getDayName(date) {
     return days[day.getDay()];
 }
 
-// Adding On Click Add Event Lister to close icon. 
+// Adding OnClick Add Event Lister to close the icon. 
 closeIcon.addEventListener("click", modalClose);
 
-//modalClose(): this method is using for closing the modal.
+//modalClose(): this method used for closing the modal.
 function modalClose() {
   modalPopUp.style.display = "none";
 }
