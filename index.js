@@ -91,7 +91,7 @@ function getIcon(condition) {
     imgSource = './assets/images/cloudySunny.svg';
     break;
     case 'cloudy':
-    imgSource = './images/cloudy.svg';
+    imgSource = './images/wind.svg';
     break;
     case 'rain':
     imgSource = './images/rain.svg';
