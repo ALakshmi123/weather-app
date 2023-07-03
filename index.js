@@ -59,7 +59,7 @@ function getWeatherData() {
   .then(data => {
     if(data.length!==0 && data.address.length === cityName.length) {
       card="";
-      temperatureElement.innerHTML = data.days[0].temp+`<span class="id">&nbsp;&deg;</span><span>&nbsp;C</span>`;
+      temperatureElement.innerHTML = data.days[0].temp+`<span>&nbsp;&deg;</span><span>&nbsp;C</span>`;
       description.innerHTML = data.days[0].conditions;
       cloudIcons.innerHTML = getIcon(data.days[0].icon);
       locationName.innerHTML = data.address;
@@ -69,7 +69,7 @@ function getWeatherData() {
       `<div class="container-block" key=${ele.datetime}>
       <div>${getDayName(ele.datetime)}</div>
         <div> ${getIcon(ele.icon)}</div>
-          <span>${ele.temp}</span><span class="id"> &deg;</span><span> C</span>
+          <span>${ele.temp}</span><span> &deg;</span><span> C</span>
           <div>${ele.description}</div>
       </div>`
       })
@@ -88,7 +88,7 @@ function getWeatherData() {
 function getIcon(condition) {
   switch(condition){
     case 'partly-cloudy-day':
-    imgSource = './assets/images/cloudySunny.svg';
+    imgSource = './images/cloudySunny.svg';
     break;
     case 'cloudy':
     imgSource = './images/wind.svg';
