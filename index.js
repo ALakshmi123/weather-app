@@ -91,19 +91,19 @@ function getIcon(condition) {
     imgSource = './assets/images/cloudySunny.svg';
     break;
     case 'cloudy':
-    imgSource = './assets/images/cloudy.svg';
+    imgSource = './images/cloudy.svg';
     break;
     case 'rain':
-    imgSource = './assets/images/rain.svg';
+    imgSource = './images/rain.svg';
     break;
     case 'clear day':
-    imgSource = './assets/images/sunny.svg';
+    imgSource = './images/sunny.svg';
     break;
     case 'clear night':
-    imgSource = './assets/images/snow.svg';
+    imgSource = './images/snow.svg';
     break;
     default:
-    imgSource = './assets/images/wind.svg';
+    imgSource = './images/wind.svg';
   }
     return `<img src= ${imgSource} width="40px" height="40px" alt="weather icon"/>`;
 }
