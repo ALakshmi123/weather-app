@@ -88,22 +88,22 @@ function getWeatherData() {
 function getIcon(condition) {
   switch(condition){
     case 'partly-cloudy-day':
-    imgSource = './images/cloudySunny.svg';
+    imgSource = './images/weatherIcon.svg';
     break;
     case 'cloudy':
-    imgSource = './images/wind.svg';
+    imgSource = './images/cloudFogIcon.svg';
     break;
     case 'rain':
-    imgSource = './images/rain.svg';
+    imgSource = './images/cloudSnowIcon.svg';
     break;
     case 'clear day':
-    imgSource = './images/sunny.svg';
+    imgSource = './images/sunColorIcon.svg';
     break;
     case 'clear night':
-    imgSource = './images/snow.svg';
+    imgSource = './images/nightCloudFogIcon.svg';
     break;
     default:
-    imgSource = './images/wind.svg';
+    imgSource = './images/weatherIcon.svg';
   }
     return `<img src= ${imgSource} width="40px" height="40px" alt="weather icon"/>`;
 }
