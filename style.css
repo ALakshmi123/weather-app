@@ -28,8 +28,8 @@ img {
     padding-bottom: .5rem;
     width: 2.5rem;
     background-color: white;
-    border-radius: 4px;
-    padding: 8px;
+    border-radius: .25rem;
+    padding: .5rem;
 }
 div > div {
     padding-top: .625rem;
@@ -81,10 +81,12 @@ div > div {
   /* The Close Button */
   .close-icon {
     width: 1rem;
+    padding: 0;
   }
   .alert-icon {
     width: 1.5rem;
     height: 1.5rem;
+    padding: 0;
   }
 
 @media only screen and (max-width: 73.75rem) {
