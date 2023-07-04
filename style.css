@@ -27,6 +27,7 @@ input {
 img {
     padding-bottom: .5rem;
     width: 2.5rem;
+    background-color: white;
 }
 div > div {
     padding-top: .625rem;
