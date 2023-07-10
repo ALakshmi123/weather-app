@@ -12,7 +12,7 @@ const closeIcon = document.getElementsByClassName("close")[0];
 
 // Grouping All variables
 const apiLink = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline"
-const apiKey = "RGLWMCQF2M8HJUNW5BWFHTQF5";
+let API_KEY;
 let card;
 let letters = /^[A-Z a-z]+$/;
 let cityName;
@@ -42,7 +42,7 @@ function handleGetWeatherData() {
 
 //getAPIURL(): this method used for returning weather API URL.
 function getAPIURL(cityName) {
-  weatherAPIURL = `${apiLink}/${cityName}?unitGroup=metric&key=${apiKey}&contentType=json`;
+  weatherAPIURL = `${apiLink}/${cityName}?unitGroup=metric&key=${process.env.API_KEY}&contentType=json`;
   return weatherAPIURL;
 }
 
