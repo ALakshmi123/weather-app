@@ -92,7 +92,7 @@ div > div {
 
 @media only screen and (max-width: 73.75rem) {
     body {
-        background-size: 300vh;
+        background-size: 400vh;
     }
     .container {
         display: flex;
